@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keyino — Pay 5%, Get 100%</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0f; color: #fff; line-height: 1.6; }
+.hero { text-align: center; padding: 80px 20px 60px; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); }
+.hero h1 { font-size: 3.5rem; font-weight: 800; margin-bottom: 16px; background: linear-gradient(90deg, #a78bfa, #60a5fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.hero p { font-size: 1.3rem; color: #cbd5e1; max-width: 600px; margin: 0 auto 32px; }
+.cta { display: inline-block; background: linear-gradient(90deg, #7c3aed, #3b82f6); color: white; padding: 16px 48px; border-radius: 12px; font-size: 1.2rem; font-weight: 700; text-decoration: none; transition: transform 0.2s; }
+.cta:hover { transform: translateY(-2px); }
+.models { text-align: center; padding: 40px 20px; color: #94a3b8; }
+.models span { display: inline-block; margin: 8px 16px; padding: 8px 20px; background: #1e293b; border-radius: 20px; font-size: 0.95rem; }
+.plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto; padding: 40px 20px 80px; }
+.plan { background: #1e293b; border-radius: 16px; padding: 32px 24px; text-align: center; border: 2px solid transparent; transition: border-color 0.2s; }
+.plan:hover { border-color: #7c3aed; }
+.plan.popular { border-color: #7c3aed; position: relative; }
+.plan.popular::before { content: 'MOST POPULAR'; position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: linear-gradient(90deg, #7c3aed, #3b82f6); padding: 4px 16px; border-radius: 12px; font-size: 0.75rem; font-weight: 700; }
+.plan h3 { font-size: 1.5rem; margin-bottom: 8px; }
+.plan .price { font-size: 2.5rem; font-weight: 800; margin: 16px 0 4px; }
+.plan .price span { font-size: 1rem; color: #94a3b8; font-weight: 400; }
+.plan .credit { color: #a78bfa; font-size: 1.1rem; font-weight: 600; margin-bottom: 16px; }
+.plan ul { list-style: none; text-align: left; margin: 20px 0; }
+.plan li { padding: 8px 0; color: #cbd5e1; border-bottom: 1px solid #334155; }
+.plan li:last-child { border: none; }
+.plan .btn { display: block; background: #334155; color: white; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: 600; margin-top: 16px; transition: background 0.2s; }
+.plan.popular .btn { background: linear-gradient(90deg, #7c3aed, #3b82f6); }
+.plan .btn:hover { background: #475569; }
+.plan.popular .btn:hover { filter: brightness(1.1); }
+.footer { text-align: center; padding: 40px 20px; color: #64748b; font-size: 0.9rem; }
+.footer a { color: #a78bfa; }
+</style>
+</head>
+<body>
+<div class="hero">
+<h1>Pay 5%, Get 100%</h1>
+<p>All AI models — Claude, GPT, Gemini, Grok — at 5-7% of official price. One API key. Monthly subscriptions from $9.</p>
+<a href="https://keyino.cc/register" class="cta">Start with $1 Free Credit</a>
+</div>
+<div class="models">
+<span>Claude Opus 5.5</span><span>GPT-6 Astra</span><span>Gemini 3.1 Pro</span><span>Grok 4.7</span><span>DeepSeek</span><span>Kimi K3</span><span>+ 13 more</span>
+</div>
+<div class="plans">
+<div class="plan">
+<h3>Starter</h3>
+<div class="price">$9<span>/mo</span></div>
+<div class="credit">$15 credit included</div>
+<ul>
+<li>✅ All 19 models</li>
+<li>✅ $15 monthly credit</li>
+<li>✅ Monthly reset</li>
+<li>✅ Same API format</li>
+</ul>
+<a href="https://keyino.cc/register" class="btn">Choose Starter</a>
+</div>
+<div class="plan popular">
+<h3>Pro</h3>
+<div class="price">$29<span>/mo</span></div>
+<div class="credit">$60 credit included</div>
+<ul>
+<li>✅ All 19 models</li>
+<li>✅ $60 monthly credit</li>
+<li>✅ Monthly reset</li>
+<li>✅ Priority support</li>
+</ul>
+<a href="https://keyino.cc/register" class="btn">Choose Pro</a>
+</div>
+<div class="plan">
+<h3>Team</h3>
+<div class="price">$79<span>/mo</span></div>
+<div class="credit">$200 credit included</div>
+<ul>
+<li>✅ All 19 models</li>
+<li>✅ $200 monthly credit</li>
+<li>✅ Monthly reset</li>
+<li>✅ Team management</li>
+</ul>
+<a href="https://keyino.cc/register" class="btn">Choose Team</a>
+</div>
+<div class="plan">
+<h3>Scale</h3>
+<div class="price">$199<span>/mo</span></div>
+<div class="credit">$600 credit included</div>
+<ul>
+<li>✅ All 19 models</li>
+<li>✅ $600 monthly credit</li>
+<li>✅ Monthly reset</li>
+<li>✅ Dedicated support</li>
+</ul>
+<a href="https://keyino.cc/register" class="btn">Choose Scale</a>
+</div>
+</div>
+<div class="footer">
+<p>19 models · One key · 5-7% of official price · <a href="https://docs.keyino.cc">Docs</a> · <a href="https://t.me/keyino_cc">Telegram</a></p>
+<p style="margin-top: 8px;">Copyright © 2026 Keyino. All rights reserved.</p>
+</div>
+</body>
+</html>
